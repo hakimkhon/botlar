@@ -5,9 +5,9 @@ yosh = "Hozirda mening yoshim {} da 3 yildan keyin esa {} bo'ladi"
 # print(yosh.format(a, a+3))
 
 b = ['lada', 'damas', 'labo', 'nexia', 'matiz']
-# b.append('tiko')
-# b.insert(2, 'damas')
-# print(len(b))
+
+b.insert(2, 'damas')
+print(len(b))
 
 # print(b)
 # b.sort()

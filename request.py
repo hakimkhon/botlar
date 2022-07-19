@@ -1,11 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
-manzil = 'https://namozvaqtlari.com/namoz/11-namangan-namoz-vaqtlari-bugungi-namoz-vaqti.html'
+manzil = 'https://namozvaqti.uz/shahar/andijon'
 r = requests.get(manzil)
 s = BeautifulSoup(r.text, 'html.parser')
-t = s.find_all(class_ = 'info')
-print(t[0].text)
+t = s.find_all(class_ = 'time')
 print(t[1].text)
+print(t[2].text)
 
 # print(t[2].text)
 # print(t[3].text)
